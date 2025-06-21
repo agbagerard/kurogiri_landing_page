@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kurogiri - Mobile & Web App Development</title>
+		<!-- Tailwind CSS CDN for quick and easy styling -->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- Font Awesome CDN for social media icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+			xintegrity="sha512-Fo3rlroXl+J0aGj3S1s4z2v3S52/01c1f1g2r8k3N6pD1y/S1l+3W8Lz1z/4/2p7+6F1i7N1q/Q4z1p+2M+8P5g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<style>
+			/* Custom font for a clean, modern look */
+			body {
+				font-family: 'Inter', sans-serif;
+				margin: 0;
+				padding: 0;
+				overflow-x: hidden; /* Prevent horizontal scrolling */
+			}
+			/* Styling for the hero section background image */
+			.hero-background {
+				/* Using a placeholder image; replace with your actual image URL */
+				background-image: url('images/background.png');
+				background-size: cover;
+				background-position: center;
+				background-attachment: fixed; /* Makes the background fixed while content scrolls */
+				height: 100vh; /* Full viewport height */
+				width: 100vw; /* Full viewport width */
+				position: relative;
+				display: flex; /* Use flexbox for centering content */
+				align-items: center; /* Center vertically */
+				justify-content: center; /* Center horizontally */
+			}
+			/* Overlay for better text readability over the background image */
+			.hero-background::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				/* background: rgba(0, 0, 0, 0.6); Dark overlay */
+			}
+			/* Ensure content is above the overlay */
+			.hero-content,
+			.footer-content {
+				z-index: 10;
+				position: relative; /* Make sure content respects z-index */
+			}
+		</style>
+	</head>
+	<body class="bg-gray-900 text-gray-100">
+		<!-- Hero Section: Background image and company name -->
+		<header class="hero-background">
+			<div
+				class="hero-content text-center p-8 rounded-lg bg-black bg-opacity-30 max-w-4xl mx-auto shadow-xl">
+				<h1 class="text-6xl md:text-8xl font-extrabold mb-4 animate-fade-in">
+					Kurogiri
+				</h1>
+				<p class="text-xl md:text-2xl text-gray-300">
+					Building the future, one app at a time.
+				</p>
+			</div>
+		</header>
+
+		<!-- Main Content Section: Business introduction -->
+		<main class="container mx-auto p-8 py-16 md:py-24 max-w-4xl">
+			<section class="mb-12">
+				<h2 class="text-4xl font-bold text-center mb-8 text-gray-50">
+					About Kurogiri
+				</h2>
+				<div class="space-y-6 text-lg leading-relaxed text-gray-300">
+					<p>
+						At Kurogiri, we specialize in crafting exceptional mobile and web
+						applications that empower and delight users and businesses. Our
+						mission is to transform innovative ideas into robust, scalable, and
+						intuitive digital solutions. We believe in the power of technology
+						to simplify complex challenges and create meaningful connections,
+						whether it's through a seamless user experience on a mobile device
+						or a powerful web-based platform.
+					</p>
+					<p>
+						Our approach combines cutting-edge technology with a deep
+						understanding of user needs and business objectives. From concept to
+						deployment, every project is thoroughly researched and delivered
+						with precision and adheres to the highest standards of quality.
+					</p>
+					<p>
+						Kurogiri was founded by
+						<a
+							class="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-lg md:text-xl"
+							href="https://www.instagram.com/agbagerard/"
+							>Denakpo Agba</a
+						>, a passionate explorer of technological innovation and elegant
+						design. With a vision to create impactful digital products that
+						resonate with audiences, Denakpo Agba established Kurogiri on the
+						principles of creativity, integrity, and relentless pursuit of
+						excellence. We're committed to not just building apps, but building
+						legacies.
+					</p>
+				</div>
+			</section>
+
+			<!-- Products Section -->
+			<section class="mt-20">
+				<h2 class="text-4xl font-bold text-center mb-12 text-gray-50">
+					Our Products
+				</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					<!-- Placeholder for Mobile App 1 -->
+					<div
+						class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+						<img
+							src="https://placehold.co/400x250/333333/FFFFFF?text=Mobile+App+1"
+							alt="Mobile App 1"
+							class="w-full h-48 object-cover rounded-md mb-4" />
+						<h3 class="text-2xl font-semibold mb-2 text-gray-50">
+							Mobile App Title One
+						</h3>
+						<p class="text-gray-300 text-base">
+							A brief description of the mobile application, highlighting its
+							key features and benefits. This is a placeholder; I'll replace
+							this with real app details.
+						</p>
+						<a
+							href="#"
+							class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+							>Learn More &rarr;</a
+						>
+					</div>
+
+					<!-- Placeholder for Web App 1 -->
+					<div
+						class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+						<img
+							src="https://placehold.co/400x250/333333/FFFFFF?text=Web+App+1"
+							alt="Web App 1"
+							class="w-full h-48 object-cover rounded-md mb-4" />
+						<h3 class="text-2xl font-semibold mb-2 text-gray-50">
+							Web App Title One
+						</h3>
+						<p class="text-gray-300 text-base">
+							A concise description of the web application, detailing its
+							purpose and primary functionalities. This is a placeholder; I'll
+							replace this with real app details.
+						</p>
+						<a
+							href="#"
+							class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+							>Learn More &rarr;</a
+						>
+					</div>
+
+					<!-- Placeholder for Mobile App 2 -->
+					<div
+						class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+						<img
+							src="https://placehold.co/400x250/333333/FFFFFF?text=Mobile+App+2"
+							alt="Mobile App 2"
+							class="w-full h-48 object-cover rounded-md mb-4" />
+						<h3 class="text-2xl font-semibold mb-2 text-gray-50">
+							Mobile App Title Two
+						</h3>
+						<p class="text-gray-300 text-base">
+							A brief description of the mobile application, highlighting its
+							key features and benefits. This is a placeholder; I'll replace
+							this with real app details.
+						</p>
+						<a
+							href="#"
+							class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+							>Learn More &rarr;</a
+						>
+					</div>
+					<!-- Placeholder for Web App 2 -->
+					<div
+						class="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+						<img
+							src="https://placehold.co/400x250/333333/FFFFFF?text=Web+App+1"
+							alt="Web App 2"
+							class="w-full h-48 object-cover rounded-md mb-4" />
+						<h3 class="text-2xl font-semibold mb-2 text-gray-50">
+							Web App Title Two
+						</h3>
+						<p class="text-gray-300 text-base">
+							A concise description of the web application, detailing its
+							purpose and primary functionalities. This is a placeholder; I'll
+							replace this with real app details.
+						</p>
+						<a
+							href="#"
+							class="inline-block mt-4 text-blue-400 hover:text-blue-300 transition-colors duration-200"
+							>Learn More &rarr;</a
+						>
+					</div>
+
+					<!-- You can add more product items here following the same structure -->
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer Section: Social media links -->
+		<footer
+			class="footer-content bg-gray-950 p-8 text-center border-t border-gray-800">
+			<p class="text-gray-400 mb-4">Connect with the us on social media:</p>
+			<div class="flex justify-center space-x-6">
+				<!-- Instagram Link -->
+				<a
+					href="https://www.instagram.com/kuro.girio/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-lg md:text-xl"
+					><i class="fab fa-instagram"></i
+				></a>
+				<!-- Tiktok Link -->
+				<a
+					href="https://www.tiktok.com/@kuro.giri0/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="text-blue-400 hover:text-blue-300 transition-colors duration-200 text-lg md:text-xl"
+					><i class="fab fa-tiktok"></i
+				></a>
+			</div>
+			<p class="mt-8 text-gray-500 text-sm">
+				&copy; 2025 Kurogiri. All rights reserved.
+			</p>
+		</footer>
+	</body>
+</html>
